@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio WebPage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div id="content">
+    <div class="back"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#" onclick="toggleProjectOverlay()">Projects</a>
+      <a href="#" onclick="toggleAboutOverlay()">About</a>
+      <a href="#" onclick="toggleContactOverlay()">Contact Us</a>
+    </nav>
+    <div id="project-overlay" onclick="toggleProjectOverlay()">
+      <span class="heading">Projects</span>
+      <div class="project">
+        <h3>BERIGHTBACK | Online Gaming Platform</h3>
+        <p>
+        <ul>
+          <li>Interactive Website developed using HTML, CSS, PHP forms and JS script.</li>
+          <li>Functionalities like Create accounts, track progress, Leaderboard.</li>
+          <li>All built games using JS script and python deployed on the site.</li>
+          <li>Game progress saved using PHP forms integrated with sqlite3.</li>
+        </ul>
+        </p>
+      </div>
+      <div class="project">
+        <h3>STUDENT MANAGEMENT | Database Management App</h3>
+        <p>
+        <ul>
+          <li>Windows Form App(.Net Framework) using Visual Studio 2019.</li>
+          <li>Functionalities like admin, student logins.</li>
+          <li>Account Creations, Data management like Gradesheets, Attendance, Student
+            Details.</li>
+          <li>Details stored in MySQL server.</li>
+        </ul>
+        </p>
+      </div>
+      <div class="project">
+        <h3>PREDICTION OF OUTCOME OF THE GAME BASED ON PLAYERS
+          STATS | Data Mining Research Project</h3>
+        <p>
+        <ul>
+          <li>Data Mining approach to predict the future outcomes of the valorant game
+            matches when 2 teams are selected.</li>
+          <li>The prediction done based on previous years players and team stats.</li>
+          <li>Using 4 different Models to find the best accuracy among them.
+          </li>
+
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div id="about-overlay" onclick="toggleAboutOverlay()">
+      <div class="about-content">
+        <span class="heading">About</span>
+        <p><br>I am a <span class="middle">Student</span> currently studying in Manipal Institute of Technology.
+          I am pursuing Information Technology. <br>I am part time <span class="middle">Web Developer</span>,
+          A <span class="middle">App Developer</span>
+          and a novice <span class="middle">Data Scientist</span>.<br> I strive to create cutting-edge solutions that
+          transform businesses and empower users.<br>As a <span class="middle">Web Developer</span>, I specialize in
+          creating responsive and
+          user-friendly websites that not only engage visitors but also deliver seamless browsing experiences across
+          various devices. Through my proficiency in <span class="middle">HTML</span>,<span class="middle">
+            CSS</span>,<span class="middle"> JavaScript</span> and other<br> web technologies,
+          I craft visually appealing interfaces and implement robust functionality to bring ideas to life.<br>In the
+          realm of <span class="middle">App Development</span>,
+          I leverage my skills in mobile app frameworks, such as <span class="middle">React Native</span><br> and <span
+            class="middle">Flutter</span>, to develop cross-platform applications
+          that cater to the growing needs of today's mobile-first world. I focus on <br>delivering intuitive user
+          interfaces, smooth
+          performance, and seamless integrations, ensuring that the apps I create provide exceptional user
+          experiences.<br>
+          Additionally, as a <span class="middle">Data Scientist</span>, I possess a strong foundation in <span
+            class="middle">statistics</span>, <span class="middle">machine learning</span>, and <span
+            class="middle">data analysis</span>.<br>
+          I have a knack for extracting meaningful insights from complex datasets and
+          transforming them into actionable solutions. By employing techniques like <span class="middle">predictive
+            modeling</span>, <span class="middle">data visualization</span>, and <span class="middle">natural language
+            processing</span>,<br> I uncover hidden patterns and trends that
+          enable businesses to make data-driven decisions.</p>
+      </div>
+    </div>
+    <div id="contact-overlay" class="transition-container" onclick="toggleContactOverlay()">
+      <div class="contact-content">
+        <span class="heading">Contact</span><br><br>
+        <p id="contact">You can reach me at <span class="middle">anishrasquinha2@gmail.com</span> or by <span
+            class="middle">phone</span> at <span class="middle">123-456-789</span>.<br></p>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="main">Hi, I am <h1 data-value="Anish Noel Rasquinha">Anish Noel Rasquinha</h1>
+    </div>
+    <div class="rest">
+      <h2><span class="topic">Web Developer</span><br><span class="topic">App Developer</span><br><span
+          class="topic">Data Scientist</span><br><span class="topic">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+          <ul class="list">
+            <li>
+              <a href="https://www.facebook.com/anish.n.378">
+                <i class="fab fa-facebook-f icon"></i> </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/anish6969420"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anish-noel-731528111/"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+            <li>
+              <a href="mailto:anishrasquinha2@gmail.com"><i class="fab fa-google-plus-g icon"></i></a>
+            </li>
+          </ul>
+        </span></h2>
+    </div>
+
+  </div>
+
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <script src='https://codepen.io/_fbrz/pen/KKEJOv/9a3e4ee2ef6dfd479ad33a2c85146fc1.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
